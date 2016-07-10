@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+}
+
+
+.main-wrap {
+    position: relative;
+    background: #fff8c0;
+    height: 1000px;
+    width: 100%;
+    left: 0px;
+    transition: all 0.4s;
+    padding: 5px;
+}
+
+.main-wrap-position{
+    left: -350px;   
+}
+
+.menu-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    background: #de5c3c;
+    z-index: 1;
+}
+
+.menu-wrap{
+    position: fixed;
+    height: 100%;
+    width: 350px;
+    right: 0px;
+    top: 0px;
+    background: #ddd;
+    z-index: -1;
+}
+
+
+/*偷來der*/
+
+
+.menu {
+    width: 20px;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 5.5px;
+    transition: all 0.7s;
+}
+
+
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu-1 {
+}
+
+.open{
+    margin-left: 9px;
+}
+
+.menu-1.open .menu-item {
+    background: #fff;
+}
+.menu-1.open .menu-item:first-child {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 0px 50%;
+    transform-origin: 0px 50%;
+}
+.menu-1.open .menu-item:nth-child(2) {
+    opacity: 0;
+}
+.menu-1.open .menu-item:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0px 50%;
+    transform-origin: 0px 50%;
+}
+
+
+.menu-item {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    display: block;
+    width: 22px;
+    height: 3px;
+    margin: 0 0 5px;
+    background: #fff;
+}
+
+
+/*  710*/
+
+.middle-test{
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 880px;
+    margin-top: 120px;
+    height: 500px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.gallery{
+    left: 0px;
+    padding: 0px;
+    width: 10000px;
+}
+
+.gallery li{
+    list-style: none;
+    margin: 20px;
+    background: #eee;
+    height: 300px;
+    width: 250px;
+    display: inline-block;
+}
+
+.gallery {
+    position:relative;
+    -webkit-animation-name: gallery;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes gallery{
+    from {left: 0;}
+    50% {left: -290px}
+    to {left: -583px}
+}
+
+
