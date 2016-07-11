@@ -7,6 +7,6 @@ $(document).ready(function(){
     
 
     $('.gallery li img').click(function(){
-        alert('幹嘛偷點我？')
+        alert('幹嘛偷點我？我只是一根香蕉！')
     });
 })
