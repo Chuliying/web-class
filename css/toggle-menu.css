@@ -1,5 +1,7 @@
-body{
-    margin: 0;
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
 }
 
 
@@ -96,13 +98,23 @@ body{
 
 /*  710*/
 
+.middle-test:before{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    border: dashed 1px red;
+    height: 600px;
+    z-index: 10;
+}
+
 .middle-test{
+    position: relative;
     margin: 0 auto;
     padding: 0px;
     max-width: 880px;
     margin-top: 120px;
     height: 500px;
-    background: #fff;
     overflow: hidden;
 }
 
@@ -116,9 +128,23 @@ body{
     list-style: none;
     margin: 20px;
     background: #eee;
-    height: 300px;
     width: 250px;
+    line-height: 0px;
     display: inline-block;
+    position: relative;
+}
+
+
+.gallery li img{
+    width: 100%;
+    transform: scale(1);
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.gallery li img:hover{
+    transform: scale(1.12);
 }
 
 .gallery {
